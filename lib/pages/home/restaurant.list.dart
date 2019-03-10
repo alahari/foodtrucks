@@ -29,6 +29,7 @@ class RestaurantsList extends StatelessWidget {
                   rest.address2 = document['address2'];
                   rest.city = document['city'];
                   rest.pincode = document['pincode'];
+                  rest.imageName =document['imageName'];
                   rest.ref = document.reference;
                   return InkWell(
                     child: Container(

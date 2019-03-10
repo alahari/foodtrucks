@@ -49,12 +49,16 @@ class _HomePageState extends State<HomePage> {
     } else if (currentTab == bottom_nav_tabs.Orders) {
       return Orders();
     } else {
-      // return DishesList();
-      return Container(
-          height: 280,
-          // width: 300,
-          //child: RestaurantsList());
-          child: Text('Hello'));
+       return Column(
+         children: <Widget>[
+          DishesList(),
+          Container(
+            height: 220,
+            child: RestaurantsList())
+         ],
+       );
+       
+      
     }
   }
 
