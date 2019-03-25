@@ -31,7 +31,10 @@ class DishesList extends StatelessWidget {
                scrollDirection: Axis.horizontal,
                children: snapshot.data.documents.map((document){
                  Dish dish = new Dish(document.data);
-                return DishCard(dish);
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: DishCard(dish),
+                );
                }).toList()
               );
             },

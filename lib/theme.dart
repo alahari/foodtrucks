@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 ThemeData getThemeData(){
    return ThemeData(
-  //  brightness: Brightness.light,
+    brightness: Brightness.light,
     primaryColor: Colors.white, // appbar
     accentColor: Colors.white, // primary button
     scaffoldBackgroundColor: Colors.white,
@@ -10,7 +10,7 @@ ThemeData getThemeData(){
     textSelectionColor: Colors.black12,
     cursorColor: Colors.black,
     toggleableActiveColor: Colors.black,
-   /* inputDecorationTheme: InputDecorationTheme(
+    inputDecorationTheme: InputDecorationTheme(
       border: const OutlineInputBorder(
         borderSide: BorderSide(color: Colors.black),
       ),
@@ -22,7 +22,7 @@ ThemeData getThemeData(){
       ),
       labelStyle: const TextStyle(
         color: Colors.black,
-      ),
-    ),*/
+      ), 
+    ),
   );
 }

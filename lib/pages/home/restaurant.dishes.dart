@@ -38,20 +38,6 @@ class RestaurantDishes extends StatelessWidget {
           ),
         ));
 
-    // where('restRef',isEqualTo: "/"+Constants.restaurantDocPath+"/"+_restaurant.documentId)
-    /*  StreamBuilder(
-      stream: Firestore.instance.collection(Constants.dishesDocPath).where('restRef',isEqualTo: Constants.restaurantDocPath+"/"+_restaurant.documentId).snapshots(),
-      builder: (BuildContext context,AsyncSnapshot<QuerySnapshot> snapshot){
-         if(snapshot.error)
-           return Text('Error');
-          switch (snapshot.connectionState) {
-            case ConnectionState.waiting:
-            return Text('Waiting ...');
-            default:
-            return Text('Kooool .....');
-          }
-           
-      },
-     ); */
+   
   }
 }

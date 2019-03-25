@@ -52,28 +52,3 @@ class RestaurantsList extends StatelessWidget {
         });
   }
 }
-
-/* 
-
-class RestaurantsList extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ScopedModelDescendant<MainModel>(builder: (context, child, model) {
-      return Container(
-          height: 300.0,
-          child: model.restaurantsCloudList.length == 0
-              ? Text('Superb!!!')
-              : ListView.builder(
-                  itemCount: model.restaurantsCloudList.length,
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) {
-                    return new RestaurantCard(
-                        model.restaurantsCloudList[index]);
-                    //Text('Great !!');
-                  },
-                ));
-    });
-  }
-}
-
-*/
